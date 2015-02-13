@@ -1,7 +1,15 @@
-@color-base: #6a26a3;
+@color-base: #30a5bf;
 
 footer
 {
+	background-color: #eaeaea;
+
+	&.footer
+	{
+		border: none;
+		padding: 0;
+	}
+
 	a, a:hover, a:active, a:visited, a:focus
 	{
 		color: @color-base;
@@ -12,6 +20,44 @@ footer
 	.glyphicon
 	{
 		font-size: 0.75em;
+	}
+
+	.social
+	{
+		padding: 1.5rem 0;
+		text-align: center;
+
+		.social-media-icon
+		{
+			margin: 0 2rem;
+		}
+	}
+
+	.closing
+	{
+		background-color: @color-base;
+		color: #fff;
+		padding: 1.5rem 0;
+
+		a, a:hover, a:active, a:visited, a:focus
+		{
+			color: #fff;
+			font-weight: 600;
+		}
+
+		p
+		{
+			float: right;
+			font-size: 1.5rem;
+			font-weight: 400;
+			margin: 0;
+			padding: 1rem 0;
+
+			&.copyright
+			{
+				float: left;
+			}
+		}
 	}
 }
 
@@ -35,7 +81,7 @@ footer
 }
 
 body {
-	font-family: 'Maven Pro', sans-serif;
+	font-family: 'Open Sans', sans-serif;
 	padding: 0;
 }
 
