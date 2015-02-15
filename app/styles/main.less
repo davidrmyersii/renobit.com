@@ -38,8 +38,7 @@ body
 header#header
 {
 	background-color: rgba(255, 255, 255, 0.15);
-	/*border-bottom: 1px solid #eaeaea;*/
-	border-top: 3px solid @color-primary;
+	border-top: 0.1875rem solid @color-primary;
 	height: 4rem;
 	left: 0;
 	position: fixed;
@@ -51,11 +50,14 @@ header#header
 h1#brand
 {
 	margin: 0;
-	padding-top: 0.4rem;
+	padding-left: 1rem;
+	padding-top: 0.8125rem;
+	/*text-align: left;*/
 
 	img
 	{
 		height: 2rem;
+		vertical-align: top;
 	}
 }
 
@@ -75,12 +77,12 @@ h1#brand
 	{
 		background-color: #5d4c4d;
 		display: block;
-		height: 2px;
+		height: 0.125rem;
 		width: 100%;
 
 		&:first-child + span
 		{
-			margin: 5px 0;
+			margin: 0.3125rem 0;
 		}
 	}
 }
