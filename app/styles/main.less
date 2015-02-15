@@ -67,14 +67,11 @@ h1#brand
 	width: 2.5rem;
 	z-index: 9999;
 
-	/* Issue with this loading in some browsers... */
-	/*box-sizing: border-box;
-	-moz-box-sizing: border-box;
-	-webkit-box-sizing: border-box;*/
+	/*.util-border-radius(0.0625rem);*/
 
 	& > span
 	{
-		background-color: #5d4c4d;
+		background-color: #fff;
 		display: block;
 		height: 0.125rem;
 		width: 100%;
@@ -108,10 +105,27 @@ nav#nav
 	{
 		color: #fff;
 		display: table-cell;
-		font-size: 3rem;
+		font-size: 3.5rem;
 		font-weight: 500;
+		opacity: 0.75;
 		text-transform: uppercase;
 		vertical-align: middle;
+	}
+
+	.arrow
+	{
+		bottom: 2rem;
+		display: block;
+		left: 0;
+		margin: auto;
+		position: absolute;
+		right: 0;
+		width: 3rem;
+
+		img
+		{
+			width: 100%;
+		}
 	}
 }
 

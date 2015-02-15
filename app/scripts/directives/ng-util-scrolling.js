@@ -16,7 +16,7 @@ angular.module('renobitApp')
 				angular.element($window).bind('scroll', function ()
 				{
 					var offset = this.pageYOffset;
-					angular.element(document.getElementById('welcome')).css('top', (-1 * (offset/10)) + 'px');
+					angular.element(document.getElementById('welcome')).css('top', (-1 * (offset/5)) + 'px');
 
 					scope.$apply();
 				});
