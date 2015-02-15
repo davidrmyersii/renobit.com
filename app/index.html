@@ -23,7 +23,7 @@
 	<link rel="stylesheet" href="styles/main.css">
 	<!-- endbuild -->
 </head>
-<body data-ng-app="renobitApp" data-util-scrolling>
+<body data-ng-app="renobitApp" data-util-scrolling data-util-load>
 	<!--[if lt IE 8]>
 		<p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
 	<![endif]-->
@@ -51,7 +51,8 @@
 		<h2>Innovative. Modern. Sharp.</h2>
 	</section>
 
-	<main id="main" data-ng-view="">
+	<main id="main">
+		<div data-ng-view=""></div>
 	</main>
 
 	<footer id="footer">
@@ -108,7 +109,8 @@
 	<script src="scripts/app.js"></script>
 	<script src="scripts/controllers/main.js"></script>
 	<script src="scripts/controllers/about.js"></script>
-	<script src="scripts/directives/ng-scroll.js"></script>
+	<script src="scripts/directives/ng-util-scrolling.js"></script>
+	<script src="scripts/directives/ng-util-load.js"></script>
 	<!-- endbuild -->
 </body>
 </html>
