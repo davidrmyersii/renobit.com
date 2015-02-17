@@ -2,13 +2,13 @@
 
 /**
  * @ngdoc function
- * @name renobitApp.controller:MainCtrl
+ * @name renobitApp.directive:utilOnload
  * @description
- * # MainCtrl
- * Controller of the renobitApp
+ * # utilOnload
+ * Handles document load functions
  */
 angular.module('renobitApp')
-	.directive('utilLoad', function ($window)
+	.directive('utilOnload', function ($window)
 	{
 		return {
 			link: function (scope)

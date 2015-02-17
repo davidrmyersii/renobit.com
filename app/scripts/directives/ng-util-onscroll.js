@@ -2,13 +2,13 @@
 
 /**
  * @ngdoc function
- * @name renobitApp.controller:MainCtrl
+ * @name renobitApp.directive:utilOnscroll
  * @description
- * # MainCtrl
- * Controller of the renobitApp
+ * # utilOnscroll
+ * Handles window on scroll events
  */
 angular.module('renobitApp')
-	.directive('utilScrolling', function ($window)
+	.directive('utilOnscroll', function ($window)
 	{
 		return {
 			link: function (scope)

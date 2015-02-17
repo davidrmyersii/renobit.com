@@ -23,7 +23,7 @@
 	<link rel="stylesheet" href="styles/main.css">
 	<!-- endbuild -->
 </head>
-<body data-ng-app="renobitApp" data-util-scrolling data-util-load>
+<body data-ng-app="renobitApp" data-util-onscroll data-util-onload>
 	<!--[if lt IE 8]>
 		<p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
 	<![endif]-->
@@ -50,7 +50,7 @@
 	<section id="welcome">
 		<h2>Designing Great Experiences</h2>
 		<div class="arrow">
-			<a href="#/">
+			<a href="#/" data-scroll-to="main">
 				<img src="images/arrow.png">
 			</a>
 		</div>
@@ -107,6 +107,7 @@
 	<script src="bower_components/angular-route/angular-route.js"></script>
 	<script src="bower_components/angular-sanitize/angular-sanitize.js"></script>
 	<script src="bower_components/angular-touch/angular-touch.js"></script>
+	<script src="bower_components/ngSmoothScroll/angular-smooth-scroll.js"></script>
 	<!-- endbower -->
 	<!-- endbuild -->
 
@@ -114,8 +115,8 @@
 	<script src="scripts/app.js"></script>
 	<script src="scripts/controllers/main.js"></script>
 	<script src="scripts/controllers/about.js"></script>
-	<script src="scripts/directives/ng-util-scrolling.js"></script>
-	<script src="scripts/directives/ng-util-load.js"></script>
+	<script src="scripts/directives/ng-util-onscroll.js"></script>
+	<script src="scripts/directives/ng-util-onload.js"></script>
 	<!-- endbuild -->
 </body>
 </html>

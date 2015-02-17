@@ -22,9 +22,11 @@ body
 	font-family: @font-body;
 	font-weight: @font-body-weight;
 	margin: 0;
-	text-align: center;
+	margin-top: -1px; /* Fixing child overflow issue */
 	padding: 0;
+	padding-top: 1px; /* Fixing child overflow issue */
 	position: relative;
+	text-align: center;
 }
 
 
