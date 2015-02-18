@@ -15,8 +15,9 @@
 	<link rel="stylesheet" href="bower_components/normalize.css/normalize.css" />
 	<!-- endbower -->
 
-	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,500,700,900' rel='stylesheet' type='text/css'>
-	<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,500,700,900' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:400,500,700,900">
+	<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,500,700,900">
+	<link rel="stylesheet" href="styles/fonts/fontello/css/fontello.css">
 
 	<!-- endbuild -->
 	<!-- build:css(.tmp) styles/main.css -->
@@ -48,11 +49,14 @@
 	</nav>
 
 	<section id="welcome">
-		<h2>Designing Great Experiences</h2>
-		<div class="arrow">
-			<a href="#/" data-scroll-to="main">
-				<img src="images/arrow.png">
-			</a>
+		<div class="container">
+			<h2>Designing Great Experiences</h2>
+			<h2><a href="#/meet-with-us" class="button">Let's Meet! <span class="icon-coffee"></span></a></h2>
+			<div class="arrow">
+				<a href="#/" data-scroll-to="main">
+					<img src="images/arrow.png">
+				</a>
+			</div>
 		</div>
 	</section>
 
@@ -80,7 +84,7 @@
 				<!-- NOTE -->
 				<!-- Need to replace glyphicon since I am no longer using bootstrap -->
 				<!-- END NOTE -->
-				<p>Made with <span class="glyphicon glyphicon-heart-empty">[love]</span> by <a href="http://renobit.com">Renobit</a></p>
+				<p>Made with <span class="icon-coffee"></span> by <a href="http://renobit.com">Renobit</a></p>
 			</div>
 		</section>
 	</footer>
@@ -114,7 +118,6 @@
 	<!-- build:js({.tmp,app}) scripts/scripts.js -->
 	<script src="scripts/app.js"></script>
 	<script src="scripts/controllers/main.js"></script>
-	<script src="scripts/controllers/about.js"></script>
 	<script src="scripts/directives/ng-util-onscroll.js"></script>
 	<script src="scripts/directives/ng-util-onload.js"></script>
 	<!-- endbuild -->
