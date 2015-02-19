@@ -11,7 +11,7 @@ angular.module('renobitApp')
 	.directive('utilOnload', function ($window)
 	{
 		return {
-			link: function (scope)
+			link: function ()
 			{
 				var localWindow = angular.element($window);
 				var welcome = document.getElementById('welcome');
@@ -37,8 +37,6 @@ angular.module('renobitApp')
 						height = newHeight;
 						width = newWidth;
 					}
-
-					scope.$apply();
 				});
 			}
 		};

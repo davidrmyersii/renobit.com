@@ -29,6 +29,25 @@ body
 	padding-top: 1px; /* Fixing child overflow issue */
 	position: relative;
 	text-align: center;
+
+	&.nav-active
+	{
+		#toggle-nav
+		{
+			border-color: #fff;
+			top: 0;
+
+			> span
+			{
+				background-color: #fff;
+			}
+		}
+
+		nav#nav
+		{
+			top: 0;
+		}
+	}
 }
 
 
@@ -62,6 +81,7 @@ h1#brand
 #toggle-nav
 {
 	border: 0.125rem solid @color-primary;
+	cursor: pointer;
 	margin: 1rem;
 	overflow: hidden;
 	padding: 0.375rem;
@@ -71,12 +91,16 @@ h1#brand
 	width: 2.5rem;
 	z-index: 9999;
 
-	& > span
+	.util-transition(1s border-color);
+
+	> span
 	{
 		background-color: @color-primary;
 		display: block;
 		height: 0.125rem;
 		width: 100%;
+
+		.util-transition(1s background-color);
 
 		&:first-child + span
 		{
@@ -87,8 +111,33 @@ h1#brand
 
 nav#nav
 {
-	display: none;
+	background-color: @color-primary;
+	color: #fff;
+	height: 150vh;
+	left: 0;
+	position: fixed;
+	top: -150vh;
+	width: 100%;
 	z-index: 9000;
+
+	.util-transition(0.25s top);
+
+	ul
+	{
+		margin-top: 0;
+
+		li
+		{
+			line-height: 4rem;
+
+			a
+			{
+				color: #fff;
+				display: block;
+				font-size: 1.5rem;
+			}
+		}
+	}
 }
 
 #welcome
@@ -125,7 +174,7 @@ nav#nav
 				border: 0.125rem solid @color-primary;
 				font-size: 60%;
 				margin-top: 2rem;
-				padding: 0.5rem;
+				padding: 0.5rem 0.75rem;
 				text-transform: none;
 
 				.util-border-radius(0.125rem);
