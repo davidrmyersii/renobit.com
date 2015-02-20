@@ -35,7 +35,6 @@ body
 		#toggle-nav
 		{
 			border-color: #fff;
-			top: 0;
 
 			> span
 			{
@@ -45,7 +44,7 @@ body
 
 		nav#nav
 		{
-			top: 0;
+			top: -25vh;
 		}
 	}
 }
@@ -113,6 +112,7 @@ nav#nav
 {
 	background-color: @color-primary;
 	color: #fff;
+	display: table;
 	height: 150vh;
 	left: 0;
 	position: fixed;
@@ -122,9 +122,19 @@ nav#nav
 
 	.util-transition(0.25s top);
 
+	.nav-wrapper
+	{
+		display: table-cell;
+		overflow: auto;
+		vertical-align: middle;
+	}
+
 	ul
 	{
-		margin-top: 0;
+		display: block;
+		margin: 0;
+		max-height: 100vh;
+		overflow: auto;
 
 		li
 		{
@@ -135,6 +145,11 @@ nav#nav
 				color: #fff;
 				display: block;
 				font-size: 1.5rem;
+
+				&:hover
+				{
+					background-color: rgba(0, 0, 0, 0.1);
+				}
 			}
 		}
 	}
