@@ -13,13 +13,13 @@ angular.module('renobitApp')
 		return {
 			link: function (scope)
 			{
-				angular.element($window).bind('scroll', function ()
-				{
-					var offset = this.pageYOffset;
-					angular.element(document.getElementById('welcome')).css('top', (-1 * (offset/10)) + 'px');
+				// angular.element($window).bind('scroll', function ()
+				// {
+				// 	var offset = this.pageYOffset;
+				// 	angular.element(document.getElementById('welcome')).css('top', (-1 * (offset/10)) + 'px');
 
-					scope.$apply();
-				});
+				// 	scope.$apply();
+				// });
 			}
 		};
 	});
