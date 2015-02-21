@@ -31,5 +31,16 @@
 				document.body.classList.add('nav-active');
 			}
 		}, false);
+
+		var navLinks = document.getElementById('nav').querySelectorAll('a');
+		var hideNav = function ()
+		{
+			document.body.classList.remove('nav-active');
+		};
+
+		for (var i = 0; i < navLinks.length; ++i)
+		{
+			navLinks[i].addEventListener('click', hideNav, false);
+		}
 	}, false);
 })(window, document);
